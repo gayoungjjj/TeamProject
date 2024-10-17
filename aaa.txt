@@ -5,9 +5,4 @@ bbb 수정
 
 팀장 초기 작업
 
-안녕하세요
-=======
-bbbb
-
-팀장 초기 작업
->>>>>>> c6e7cc762a2b2f5620f072e6b9ac86a544f06698
+qqqqqqqqqqqqqqqqqqq
