@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.mapper.BoardMapper">  
+	
+	<!-- 
+		<xml 규칙> 
+		- INSERT 주석위치 : tag안에 주석금지
+		- MYBATIS는 PreparedStatement 를 내부에서 사용함
+		- insert tag 안에 xml 주석 사용을 금지
+		- ';' 사용금지
+		- 대소문자 구분하기
+		- 칼럼 이름은 모두 소문자로 표시
+		- '?' 파라미터 대신 #{title}, #{content}, #{writer}
+						ex) #{title} : .setTitle(title) 함수를 호출
+							.setTitle(),.setContent(),.setWriter() 반드시 필요
+							= 별도의 클래스를 사용함
+	-->
+	
+	<insert id="boardInsert">
+		INSERT INTO BOARD (BNO, TITLE, CONTENT, WRITER)
+		VALUES (SEQ_BNO.NEXTVAL, #{title}, #{content}, #{writer})
+	</insert> 
+ 
+</mapper>
+
+
+
+
+
