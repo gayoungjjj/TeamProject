@@ -9,4 +9,4 @@
 <body>
 	<a href="/join/join">회원가입</a>
 </body>
-</html>
+</html> 
